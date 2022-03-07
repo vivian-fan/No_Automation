@@ -22,3 +22,16 @@ paths:
                 type: array
                 items:
                   type: string
+  /groups:
+    get:
+      summary: Returns a list of groups.
+      description: Optional extended description in CommonMark or HTML.
+      responses:
+        '200':
+          description: A JSON array of group names
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
